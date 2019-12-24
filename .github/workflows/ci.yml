@@ -19,3 +19,6 @@ jobs:
         unzip sdk.zip -d ~/sdk
         export PATH=$PATH:~/sdk/bin
 
+    - name: Compile Namaste App
+        cd ./device-apps/namaste
+        monkeyc [-d <arg>] [-f <arg>] [-o <arg>] [-y <arg>]
